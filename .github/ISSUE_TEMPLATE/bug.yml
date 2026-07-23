@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a Windows, shell, path, probe, or installer problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Native Windows with PowerShell
+        - Native Windows with cmd.exe
+        - Git Bash or MSYS2
+        - WSL
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or task
+      description: Remove secrets before pasting output.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual and expected result
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      placeholder: Claude Code or Codex version

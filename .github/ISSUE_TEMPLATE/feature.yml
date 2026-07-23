@@ -1,0 +1,24 @@
+name: Compatibility request
+description: Request support for another Windows shell, tool, or mismatch
+title: "[Compatibility]: "
+labels: [enhancement]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Shell or tool
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure this should prevent
+      description: Include a small safe reproduction when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Preferred agent behavior
+    validations:
+      required: true

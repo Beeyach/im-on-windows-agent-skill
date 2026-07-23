@@ -1,0 +1,4 @@
+interface:
+  display_name: "I’m on Windows"
+  short_description: "Keep coding agents Windows-native and shell-aware"
+  default_prompt: "Use $im-on-windows to work in this project without mixing Windows, WSL, or shell conventions."
